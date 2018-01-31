@@ -23,7 +23,7 @@
     "build": "steal-tools build"
   },
   "dependencies": {
-    "can-component": "^4.0.0",
+    "can-component": "^4.0.1",
     "can-compute": "^4.0.0",
     "can-connect": "^2.0.1",
     "can-define": "^2.0.0",
@@ -33,14 +33,14 @@
     "can-stache": "^4.0.2",
     "can-stache-bindings": "^4.0.4"
   },
-  "steal": {
-    "plugins": [
-      "steal-stache"
-    ]
-  },
   "devDependencies": {
     "steal": "^1.6.4",
     "steal-stache": "^4.0.0",
     "steal-tools": "^1.11.2"
+  },
+  "steal": {
+    "plugins": [
+      "steal-stache"
+    ]
   }
 }
