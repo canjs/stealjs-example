@@ -19,8 +19,9 @@
   ],
   "main": "main.js",
   "scripts": {
+    "build": "steal-tools build",
     "clean": "rm -rf dist/bundles dist/steal.production.js",
-    "build": "steal-tools build"
+    "start": "http-server"
   },
   "dependencies": {
     "can-component": "^4.0.1",
@@ -34,6 +35,7 @@
     "can-stache-bindings": "^4.0.4"
   },
   "devDependencies": {
+    "http-server": "^0.11.1",
     "steal": "^1.6.4",
     "steal-stache": "^4.0.0",
     "steal-tools": "^1.11.2"
