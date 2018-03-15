@@ -21,7 +21,7 @@
   "scripts": {
     "build": "steal-tools build",
     "clean": "rm -rf dist/bundles dist/steal.production.js",
-    "start": "http-server"
+    "start": "http-server -c-1"
   },
   "dependencies": {
     "can-component": "^4.0.1",
