@@ -1,13 +1,4 @@
-import { Component, DefineMap } from "can";
-
-const ViewModel = DefineMap.extend({
-  visible: {
-    default: false
-  },
-  message: {
-    default: "Hello There!"
-  }
-});
+import { Component } from "can";
 
 Component.extend({
   tag: "hello-world",
@@ -20,5 +11,12 @@ Component.extend({
     {{/ if }}
   </div>
   `,
-  ViewModel
+  ViewModel: {
+    visible: {
+      default: false
+    },
+    message: {
+      default: "Hello There!"
+    }
+  }
 });
