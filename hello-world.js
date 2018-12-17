@@ -3,13 +3,13 @@ import { Component } from "can";
 Component.extend({
   tag: "hello-world",
   view: `
-  <div on:click="this.visible = not(this.visible)">
-    {{# if(visible) }}
-      {{message}}
-    {{ else }}
-      Click me
-    {{/ if }}
-  </div>
+    <div on:click="this.visible = not(this.visible)">
+      {{# if(visible) }}
+        {{message}}
+      {{ else }}
+        Click me
+      {{/ if }}
+    </div>
   `,
   ViewModel: {
     visible: {
