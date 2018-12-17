@@ -24,15 +24,7 @@
     "start": "http-server -c-1"
   },
   "dependencies": {
-    "can-component": "^4.0.1",
-    "can-compute": "^4.0.0",
-    "can-connect": "^2.0.1",
-    "can-define": "^2.0.0",
-    "can-route": "^4.0.1",
-    "can-route-pushstate": "^4.0.1",
-    "can-set": "^1.5.1",
-    "can-stache": "^4.0.2",
-    "can-stache-bindings": "^4.0.4"
+    "can": "^5.19.1"
   },
   "devDependencies": {
     "http-server": "^0.11.1",

@@ -1,8 +1,14 @@
-import DefineMap from "can-define/map/map";
-import template from "./main.stache!";
+import { Component } from "can";
+import view from "./main.stache!";
 
 import "./hello-world";
 
-const data = new DefineMap({ message: "Hello World" });
-
-document.body.appendChild(template(data));
+Component.extend({
+  tag: "my-app",
+  view,
+  ViewModel: {
+    message: {
+      default: "Hello World"
+    }
+  }
+});
