@@ -1,28 +1,15 @@
 import { StacheElement } from "can";
-import view from "./main.stache!";
+import view from "./main.stache";
 
 import "./hello-world";
-import DeepObservable from "can-deep-observable";
 
 class MyApp extends StacheElement {
-  static get view() {
-    return view;
-  }
+  static view = view;
 
-  static get props() {
-    return {
-      message: {
-        default: "Hello World"
-      }
-    };
-  }
-
-  static get propertyDefaults() {
-    return DeepObservable;
-  }
-
-  static get seal() {
-    return true;
-  }
+  static props = {
+    message: {
+      default: "Hello World"
+    }
+  };
 }
 customElements.define("my-app", MyApp);
