@@ -1,4 +1,4 @@
-import { StacheElement } from "can";
+import { route, StacheElement } from "can";
 
 class HelloWorld extends StacheElement {
   static view = `
@@ -21,3 +21,5 @@ class HelloWorld extends StacheElement {
   };
 }
 customElements.define("hello-world", HelloWorld);
+
+route.start();
