@@ -1,8 +1,7 @@
-import { Component } from "can";
+import { StacheElement } from "can";
 
-Component.extend({
-  tag: "hello-world",
-  view: `
+class HelloWorld extends StacheElement {
+  static view = `
     <div on:click="this.visible = not(this.visible)">
       {{# if(visible) }}
         {{message}}
@@ -10,13 +9,15 @@ Component.extend({
         Click me
       {{/ if }}
     </div>
-  `,
-  ViewModel: {
+  `;
+
+  static props = {
     visible: {
       default: false
     },
     message: {
       default: "Hello There!"
     }
-  }
-});
+  };
+}
+customElements.define("hello-world", HelloWorld);
