@@ -1,15 +1,14 @@
-import { StacheElement } from "can";
-import view from "./main.stache";
+import { Component } from "can";
+import view from "./main.stache!";
 
 import "./hello-world";
 
-class MyApp extends StacheElement {
-  static view = view;
-
-  static props = {
+Component.extend({
+  tag: "my-app",
+  view,
+  ViewModel: {
     message: {
       default: "Hello World"
     }
-  };
-}
-customElements.define("my-app", MyApp);
+  }
+});

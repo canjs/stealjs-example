@@ -5,6 +5,13 @@
   </head>
   <body>
     <my-app></my-app>
-    <script src="./node_modules/steal/steal.js" data-main="main"></script>
+    <script>
+      steal = {
+        paths: {
+          "can-route*src/routedata": "node_modules/can-route/src/routedata-definemap.js"
+        }
+      };
+    </script>
+    <script src="./node_modules/steal/steal-with-promises.js" data-main="main"></script>
   </body>
 </html>

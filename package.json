@@ -19,7 +19,7 @@
   ],
   "main": "main.js",
   "scripts": {
-    "build": "steal-tools build",
+    "build": "node build.js",
     "clean": "rm -rf dist/bundles dist/steal.production.js",
     "start": "http-server -c-1"
   },
@@ -36,6 +36,9 @@
       "plugins": [
         "transform-class-properties"
       ]
+    },
+    "paths": {
+      "can-route*src/routedata": "node_modules/can-route/src/routedata-definemap.js"
     },
     "plugins": [
       "can"

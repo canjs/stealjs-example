@@ -1,7 +1,8 @@
-import { route, StacheElement } from "can";
+import { Component, route } from "can";
 
-class HelloWorld extends StacheElement {
-  static view = `
+Component.extend({
+  tag: "hello-world",
+  view: `
     <div on:click="this.visible = not(this.visible)">
       {{# if(visible) }}
         {{message}}
@@ -9,17 +10,15 @@ class HelloWorld extends StacheElement {
         Click me
       {{/ if }}
     </div>
-  `;
-
-  static props = {
+  `,
+  ViewModel: {
     visible: {
       default: false
     },
     message: {
       default: "Hello There!"
     }
-  };
-}
-customElements.define("hello-world", HelloWorld);
+  }
+});
 
 route.start();
