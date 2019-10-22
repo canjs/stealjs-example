@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "http-server": "^0.11.1",
-    "steal": "^2.0.0",
+    "steal": "^2.2.4",
     "steal-tools": "^2.0.0"
   },
   "steal": {
