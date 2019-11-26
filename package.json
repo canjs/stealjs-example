@@ -27,7 +27,7 @@
     "can": "^6.0.0"
   },
   "devDependencies": {
-    "http-server": "^0.11.1",
+    "http-server": "^0.12.0",
     "steal": "^2.0.0",
     "steal-tools": "^2.0.0"
   },
